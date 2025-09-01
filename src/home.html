@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home • Simple Web</title>
+  <style>
+    :root{
+      --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#94a3b8; --link:#93c5fd; --accent:#22d3ee;
+      --border:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+    header{padding:16px 20px;border-bottom:1px solid var(--border);background:#0b1223;position:sticky;top:0}
+    .wrap{max-width:960px;margin:0 auto;padding:24px}
+    nav a{color:var(--text);text-decoration:none;margin-right:14px;padding:8px 12px;border-radius:10px}
+    nav a.active, nav a:hover{background:var(--border)}
+    .hero{display:grid;gap:14px;padding:32px;border:1px solid var(--border);border-radius:16px;background:var(--card)}
+    .title{font-size:clamp(24px,4vw,36px);margin:0}
+    .tag{color:var(--muted);margin:0}
+    .btns{display:flex;gap:10px;margin-top:8px}
+    .btn{background:var(--accent);color:#081217;text-decoration:none;padding:10px 14px;border-radius:10px;font-weight:600}
+    footer{border-top:1px solid var(--border);padding:18px 20px;color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="padding:0">
+      <nav>
+        <a class="active" href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1 class="title">Simple Web</h1>
+      <p class="tag">A tiny starter website with Node & Express</p>
+      <div class="btns">
+        <a class="btn" href="/about">Learn more</a>
+        <a class="btn" href="/contact">Say hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with ❤ in Sri Lanka</footer>
+</body>
+</html>
