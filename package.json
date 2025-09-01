@@ -1,0 +1,14 @@
+{
+  "name": "simple-web",
+  "version": "1.0.0",
+  "description": "Very simple website with Node.js and Express",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
